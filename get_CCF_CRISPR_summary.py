@@ -4,7 +4,7 @@
 #
 # To run: 
 # module load python/3.6.6-gcc5
-# python3 get_CCF_CRISPR_summary.py —input cg23_ccf_output/*_output/R*/TSV/Crisprs_REPORT.tsv
+# python3 get_CCF_CRISPR_summary.py --input cg23_ccf_output/*_output/R*/TSV/Crisprs_REPORT.tsv
 #
 # Authors - Roni Froumine
 
