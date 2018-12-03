@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 #
-# Practicing navo through CCF files
+# Get details about CRISPR arrays from Crisprs_REPORT files
+#
+# To run: 
+# module load python/3.6.6-gcc5
+# python3 get_CCF_CRISPR_summary.py —input cg23_ccf_output/*_output/R*/TSV/Crisprs_REPORT.tsv
 #
 # Authors - Roni Froumine
 
