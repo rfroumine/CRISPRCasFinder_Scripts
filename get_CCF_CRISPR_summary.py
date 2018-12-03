@@ -35,19 +35,21 @@ def get_arguments():
 
 def main():
 
-    # Get arguments
+    # get arguments
     args = get_arguments()
 
+    # create output file with header
     currTime = datetime.datetime.now().strftime('%Y_%m_%d_%H_%M_%S')
     outputFileName = "crisprSummary_" + currTime + ".csv"
 
     crisprSummary = open(outputFileName, "w")
     writer = csv.writer(crisprSummary)
-    writer.writerow(["Genome", "CRISPRId", "NbRepeats", "EvidenceLevel"])
+    writer.writerow(["Genome", "CRISPR_Id", "CRISPR_Start", "CRISPR_End", "Consensus_Repeat", "Repeat_Length", "Spacers_Nb", "Mean_size_Spacers",  "Repeats_Conservation(percent_idenity)", "Evidence_Level"])
 
+    # get wanted info from individual Crisprs_REPORT files and add them to the output file
     for filepath in args.input:
     
-        filename = filepath.split('/')[1].split('.fasta')[0]
+        genome_name = filepath.split('/')[1].split('.fasta')[0]
 
         crisprs_report = open(filepath)
         data = csv.reader(crisprs_report, delimiter='\t')
@@ -55,7 +57,7 @@ def main():
         crisprSummary_rows = []
         for row in data:
             if not row == []:
-                crisprSummary_rows.append([filename, row[4], row[17], row[26]])
+                crisprSummary_rows.append([genome_name, row[4], row[5], row[6], row[10], row[13], row[14], row[15], row[19], row[26]])
         writer.writerows(crisprSummary_rows)
 
     crisprSummary.close()
