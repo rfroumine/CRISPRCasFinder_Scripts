@@ -46,7 +46,7 @@ def main():
 
     ccfSummary = open(outputFileName, "w")
     writer = csv.writer(ccfSummary)
-    writer.writerow(["Genome", "num_CRISPR(Ev3or4)", "Cas_TypeIE(atleast7genes)", "Else"])
+    writer.writerow(["Genome", "num_CRISPR_Ev3or4", "Cas_TypeIE_atleast3genes", "Else"])
 
     for filepath in args.crispr_input:
         crisprSummary = open(filepath)
