@@ -46,7 +46,7 @@ def main():
 
     ccfSummary = open(outputFileName, "w")
     writer = csv.writer(ccfSummary)
-    writer.writerow(["Genome", "num_CRISPR_Ev3or4", "Cas_TypeIE_atleast3genes", "Else"])
+    writer.writerow(["Genome", "num_CRISPR_Ev3or4", "Cas_TypeIE_atleast5genes", "Else"])
 
     for filepath in args.crispr_input:
         crisprSummary = open(filepath)
@@ -57,7 +57,6 @@ def main():
         casSummary = open(filepath)
         casdata = csv.reader(casSummary)
         header = next(casdata)
-
 
     output_dict = defaultdict(list)
     for row1 in crisprdata:
@@ -74,7 +73,7 @@ def main():
         genome = row2[0]
         cc_type = row2[1]
         cas_genes = row2[-1]
-        if len(cas_genes.split(";")) >=3 and not cc_type == "CAS":
+        if len(cas_genes.split(";")) >=5 and not cc_type == "CAS":
             output_dict[genome].append(cc_type)
 
     output_rows = []
