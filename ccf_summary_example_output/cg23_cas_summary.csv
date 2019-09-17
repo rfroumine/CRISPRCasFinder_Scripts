@@ -1,0 +1,5 @@
+Genome,System_Type,Begin_and_End,Seq_ID,Cas_Genes
+ABC123,CAS-TypeIE,begin=686826;end=695119,{sequenceID=NODE_1_length_825773_cov_6},"[cas2_TypeIE (686826,687113,-); cas1_TypeIE (687091,687966,-); cas5_TypeIE (687966,688682,-); cas7_TypeIE (688695,689729,-); cas6_TypeIE (689759,690406,-); cse2_TypeIE (690399,690965,-); cse1_TypeIE (690977,692500,-); cas3_TypeI (692504,695119,-)]"
+XYZ567,CAS-TypeIE,begin=1015084;end=1023377,{sequenceID=NODE_1_length_1755013_cov_8},"[cas3_TypeI (1015084,1017699,+); cse1_TypeIE (1017703,1019226,+); cse2_TypeIE (1019238,1019804,+); cas6_TypeIE (1019797,1020444,+); cas7_TypeIE (1020474,1021508,+); cas5_TypeIE (1021521,1022237,+); cas1_TypeIE (1022237,1023112,+); cas2_TypeIE (1023090,1023377,+)]"
+XYZ567,CAS,begin=11942;end=13534,{sequenceID=NODE_15_length_93593_cov_0},"[cas3a_TypeI (11942,13534,-); cas3a_TypeI (11942,13534,-)]"
+QRS89,CAS,begin=59157;end=60488,{sequenceID=NODE_23_length_70699_cov_0},"[cas3_TypeI (59157,60488,+); cas3_TypeI (59157,60488,+)]"
