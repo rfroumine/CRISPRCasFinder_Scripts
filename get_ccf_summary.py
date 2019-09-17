@@ -43,26 +43,24 @@ def main():
     args = get_arguments()
 
     # prepare output files
+    ## prefix for output files
     cg_name = re.findall(r"(?:CG|ST)\d+", args.input[0])[0].lower()
-
     ## crispr output 
     crispr_filename = f"{cg_name}_crispr_summary.csv"
     crispr_ofile = open(crispr_filename, "w")
     crispr_writer = csv.writer(crispr_ofile)
     crispr_writer.writerow(["Genome", "CRISPR_Id", "CRISPR_Start", "CRISPR_End", "Consensus_Repeat", "Repeat_Length", "Spacers_Nb", "Mean_Size_Spacers",  "Repeats_Conservation(percent_id)", "Evidence_Level"])
-
     ## cas output
     cas_filename = f"{cg_name}_cas_summary.csv"
     cas_ofile = open(cas_filename, "w")
     cas_writer = csv.writer(cas_ofile)
     cas_writer.writerow(["Genome", "System_Type", "Begin_and_End", "Seq_ID", "Cas_Genes"])
-
     ## crispr-cas output
     cc_filename = f"{cg_name}_crispr-cas_summary.csv"
     cc_ofile = open(cc_filename, "w")
     cc_writer = csv.writer(cc_ofile)
     cc_writer.writerow(["Genome", "Num_CRISPR(Ev3or4)", "CC_Type", "Cas_Genes"])
-
+    
     # loop through input_fps 
     for input_fp in args.input:
         filepath = Path(input_fp)
