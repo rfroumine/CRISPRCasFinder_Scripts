@@ -1,0 +1,5 @@
+Genome,Num_CRISPR(Ev3or4),CC_Type,Cas_Genes,,,,
+ABC123,2,CAS-TypeIE,"[cas2_TypeIE (686826,687113,-); cas1_TypeIE (687091,687966,-); cas5_TypeIE (687966,688682,-); cas7_TypeIE (688695,689729,-); cas6_TypeIE (689759,690406,-); cse2_TypeIE (690399,690965,-); cse1_TypeIE (690977,692500,-); cas3_TypeI (692504,695119,-)]",,,,
+XYZ567,3,CAS-TypeIE,"[cas3_TypeI (1015084,1017699,+); cse1_TypeIE (1017703,1019226,+); cse2_TypeIE (1019238,1019804,+); cas6_TypeIE (1019797,1020444,+); cas7_TypeIE (1020474,1021508,+); cas5_TypeIE (1021521,1022237,+); cas1_TypeIE (1022237,1023112,+); cas2_TypeIE (1023090,1023377,+)]",,,,
+JKL444,1,,,,,,
+QRS89,1,,,,,,
