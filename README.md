@@ -16,5 +16,8 @@ Outputs (see ccf_summary_example_output):
   * cgXX_crispr_summary.csv
   * cgXX_cas_summary.csv
   * cgXX_crispr-cas_summary.csv
+  
+Usage:
+```python3 /path/to/get_ccf_summary.py --input path/to/your/CCF_output/Result_*```
 
 N.B. This script assumes that the ```-cas``` option has been used when running CRISPRCasFinder. For input directories that do not have a Cas_Report.tsv their row in cgXX_cas_summary.csv will say "no cas files error".
