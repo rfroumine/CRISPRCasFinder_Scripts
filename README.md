@@ -12,7 +12,7 @@ Requirements:
 Input: 
   * file paths to the Result_* directories made by CRISPRCasFinder
   
-Outputs (ccf_summary_example_output): 
+Outputs (see ccf_summary_example_output): 
   * cgXX_crispr_summary.csv
   * cgXX_cas_summary.csv
   * cgXX_crispr-cas_summary.csv
