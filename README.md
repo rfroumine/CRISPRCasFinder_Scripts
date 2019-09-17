@@ -1,9 +1,9 @@
 # CRISPRCasFinder_scripts
-Scripts for analysing CCF output files
+Scripts for analysing CRISPRCasFinder (CCF) output files
 
 
 ## get_ccf_summary.py
-This script will summarise the Crisprs_Report.tsv and Cas_Report.tsv output files from CRISPRCasFinder (CCF) from a group of genomes into a 3 output files.
+This script will summarise the Crisprs_Report.tsv and Cas_Report.tsv output files from CCF from a group of genomes into a 3 output files.
 For my uses, I give CCF output from genomes in the same clonal group (cg) so my file prefixes are cgXX_*.
 
 Requirements:
